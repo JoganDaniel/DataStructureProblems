@@ -1,4 +1,5 @@
 ﻿using DataStructureProblems.BalancedParanthesis;
+using DataStructureProblems.BankingCashCounter;
 using DataStructureProblems.OrderedList;
 using DataStructureProblems.UnorderedList;
 
@@ -12,8 +13,10 @@ public class Program
         //UnorderedListOperations operations = new UnorderedListOperations();
         //operations.ReadFileAndPerformOperation(unorderedFilepath);
         //OrderedListOperations operations = new OrderedListOperations();
-        //operations.ReadAndPerformOperation(orderedFilepath);
-        BalancedParanthesisOperation operation = new BalancedParanthesisOperation();
-        operation.ReadAndPerformOperation(stackFilepath);
+        ////operations.ReadAndPerformOperation(orderedFilepath);
+        //BalancedParanthesisOperation operation = new BalancedParanthesisOperation();
+        //operation.ReadAndPerformOperation(stackFilepath);
+        BankingOperations operations = new BankingOperations(10000);
+        operations.AddPersonsInQueue();
     }
 }
