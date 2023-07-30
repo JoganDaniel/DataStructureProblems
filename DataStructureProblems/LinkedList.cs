@@ -40,6 +40,7 @@ namespace DataStructureProblems
                 Console.Write(temp.data + " ");
                 temp = temp.next;
             }
+            Console.WriteLine();
         }
         internal int Search(T value)
         {
